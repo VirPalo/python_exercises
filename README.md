@@ -13,5 +13,4 @@ Es un repositorio de práctica para mi transición a desarrollo Python/Django.
 - Git/GitHub
 
 ## Autora
-Virginia Paloma 
-- Ingeniera Agrimensora en transición a Desarrollo de Software
+Virginia Paloma - Ingeniera Agrimensora en transición a Desarrollo de Software
