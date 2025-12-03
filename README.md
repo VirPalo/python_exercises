@@ -9,7 +9,7 @@ Es un repositorio de práctica para mi transición a desarrollo Python/Django.
 - Mini Proyectos
 
 ## Tecnologías
-- Python
+- Python 3.13.1
 - Git/GitHub
 
 ## Autora

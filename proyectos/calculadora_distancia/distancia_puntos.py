@@ -54,13 +54,13 @@ def obtener_coordenadas(numero_punto):
     x, y (tuple): Coordenadas del punto
     '''
     
-    x = validar_coordenada(f'Ingrese la coordenada x del punto {numero_punto}.')
-    y = validar_coordenada(f'Ingrese la coordenada y del punto {numero_punto}.')
+    x = validar_coordenada(f'Ingrese la coordenada x del punto {numero_punto}:')
+    y = validar_coordenada(f'Ingrese la coordenada y del punto {numero_punto}:')
     
     return x, y
 
 # Función para mostrar resultados
-def mostrar_resultados(x1, x2, y1, y2, distancia):
+def mostrar_resultados(x1, y1, x2, y2, distancia):
     '''
     Se muestran los resultados obtenidos
     
@@ -73,14 +73,26 @@ def mostrar_resultados(x1, x2, y1, y2, distancia):
     '''
     
     print('\n--- Resultado ---')
-    print(f'Punto 1: {x1}, {y1}')
-    print(f'Punto 2: {x2}, {y2}')
+    print(f'Punto 1: ({x1}, {y1})')
+    print(f'Punto 2: ({x2}, {y2})')
     print(f'Distancia: {distancia:.2f} unidades.')
 
-
+# Función que agrupa el código principal
 def main():
-    pass
+    
+    print('\n--- Calculadora de distancia ---')
+    
+    # Obtengo coordenadas de puntos
+    x1, y1 = obtener_coordenadas(1)
+    x2, y2 = obtener_coordenadas(2)
+    
+    # Calculo distancia
+    distancia = calcular_distancia(x1, y1, x2, y2)
+    
+    # Muestro los resultados
+    mostrar_resultados(x1, y1, x2, y2, distancia)
+    
 
-
-#Llamada a la función
-#dist_between_points(x1, y1, x2, y2)
+#  Esto se ejecuta si se corre el archivo directamente. Sino, se importa. Código reutilizable.
+if __name__ == '__main__':
+    main()
